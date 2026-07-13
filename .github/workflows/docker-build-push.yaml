@@ -37,6 +37,6 @@ jobs:
           context: ./app
           file: ./app/Dockerfile
           push: true
-          tags: 
+          tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/nginx-app:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/nginx-app:${{ github.sha }}
